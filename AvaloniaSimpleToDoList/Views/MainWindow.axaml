@@ -18,7 +18,7 @@
     <!-- We give a name to the root grid in order to access it later -->
     <Grid RowDefinitions="Auto, *, Auto" x:Name="Root">
         <!-- This is our title text block.  -->
-        <TextBlock Text="My ToDo-List"></TextBlock>
+        <TextBlock Text="My ToDo-List" Classes="h1"></TextBlock>
         <ScrollViewer Grid.Row="1">
             <ItemsControl ItemsSource="{Binding ToDoItems}">
                 <!--  The ItemTemplate defines how each item should be represented  -->
@@ -31,7 +31,7 @@
                             <Button Command="{Binding #Root.((vm:MainWindowViewModel)DataContext).RemoveItemCommand}"
                                     CommandParameter="{Binding .}"
                                     Grid.Column="1">
-                                Delete
+                                <PathIcon Data="{DynamicResource AcceptIconData}"></PathIcon>
                             </Button>
                         </Grid>
                     </DataTemplate>
@@ -44,8 +44,7 @@
             Watermark="Add a new Item">
             <TextBox.InnerRightContent>
                 <Button Command="{Binding AddItemCommand}">
-                    Add
-                    <!-- <PathIcon Data="{DynamicResource AcceptIconData}" Foreground="Green" /> -->
+                    <PathIcon Data="{DynamicResource AcceptIconData}" Foreground="Green" />
                 </Button>
             </TextBox.InnerRightContent>
             <TextBox.KeyBindings>
