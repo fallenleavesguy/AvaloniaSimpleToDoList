@@ -17,7 +17,24 @@ public partial class MainWindowViewModel : ViewModelBase
         set { this.RaiseAndSetIfChanged(ref _Number1, value); }
     }
 
-#pragma warning disable CA1822 // Mark members as static
-    public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+    private decimal? _Number2 = 3;
+
+    public decimal? Number2
+    {
+        get => _Number2;
+        set => this.RaiseAndSetIfChanged(ref _Number2, value);
+    }
+    
+    private string _Operator = "+";
+
+    public string Operator
+    {
+        get => _Operator;
+        set => this.RaiseAndSetIfChanged(ref _Operator, value);
+    }
+
+    public string[] AvailableMathOperators { get; } = new string[]
+    {
+        "+", "-", "*", "/"
+    };
 }
