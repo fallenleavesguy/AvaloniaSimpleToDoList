@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicMvvmSample", "BasicMvv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandSample", "CommandSample\CommandSample.csproj", "{36754263-E178-4223-99D8-B4B6D9A198B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueConversionSample", "ValueConversionSample\ValueConversionSample.csproj", "{FFB68C2D-9CE1-46FD-A9E4-3F9B1BFF3B4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{36754263-E178-4223-99D8-B4B6D9A198B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36754263-E178-4223-99D8-B4B6D9A198B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36754263-E178-4223-99D8-B4B6D9A198B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFB68C2D-9CE1-46FD-A9E4-3F9B1BFF3B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB68C2D-9CE1-46FD-A9E4-3F9B1BFF3B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB68C2D-9CE1-46FD-A9E4-3F9B1BFF3B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB68C2D-9CE1-46FD-A9E4-3F9B1BFF3B4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
