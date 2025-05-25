@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueConversionSample", "Va
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationSample", "ValidationSample\ValidationSample.csproj", "{AFEEC385-F28C-4FB5-A96E-8CED71615A2B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicDataTemplateSample", "BasicDataTemplateSample\BasicDataTemplateSample.csproj", "{A9B98D7C-E04E-44C1-BAF7-4B0FD82B32EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{AFEEC385-F28C-4FB5-A96E-8CED71615A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFEEC385-F28C-4FB5-A96E-8CED71615A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFEEC385-F28C-4FB5-A96E-8CED71615A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9B98D7C-E04E-44C1-BAF7-4B0FD82B32EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9B98D7C-E04E-44C1-BAF7-4B0FD82B32EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9B98D7C-E04E-44C1-BAF7-4B0FD82B32EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9B98D7C-E04E-44C1-BAF7-4B0FD82B32EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
