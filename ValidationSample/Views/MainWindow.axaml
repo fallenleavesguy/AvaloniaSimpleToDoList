@@ -22,6 +22,10 @@
         <TabItem Header="INotifyDataErrorInfo">
             <TextBox Text="{Binding ValidationUsingINotifyDataErrorInfoViewModel.EMail}" />
         </TabItem>
+        <!--Validation using Exceptions in setter-->
+        <TabItem Header="ExceptionInsideSetter">
+            <TextBox Text="{Binding ValidationUsingExceptionInsideSetterViewModel.EMail}" />
+        </TabItem>
     </TabControl>
 
 </Window>
