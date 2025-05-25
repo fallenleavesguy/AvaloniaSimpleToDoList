@@ -4,6 +4,7 @@
         xmlns:model="using:BasicDataTemplateSample.Models"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:view="using:BasicDataTemplateSample.Views"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="BasicDataTemplateSample.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -19,13 +20,13 @@
         <DataTemplate DataType="model:Student">
             <StackPanel>
                 <TextBlock FontWeight="Bold" Text="{Binding Grade, StringFormat='I am a student in {0}. grade'}"></TextBlock>
-                <ContentControl Content="{Binding}" ContentTemplate="{DynamicResource My.DataTemplates.Person}"></ContentControl>
+                <view:PersonView></view:PersonView>
             </StackPanel>
         </DataTemplate>
         <DataTemplate DataType="model:Teacher">
             <StackPanel>
                 <TextBlock FontWeight="Bold" Text="{Binding Subject, StringFormat='I am a teacher for: &quot;{0}&quot;'}"></TextBlock>
-                <ContentControl Content="{Binding}" ContentTemplate="{DynamicResource My.DataTemplates.Person}"></ContentControl>
+                <view:PersonView></view:PersonView>
             </StackPanel>
         </DataTemplate>
     </Window.DataTemplates>
