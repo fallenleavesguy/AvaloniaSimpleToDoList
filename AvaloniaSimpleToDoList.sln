@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicDataTemplateSample", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncDataTemplateSample", "FuncDataTemplateSample\FuncDataTemplateSample.csproj", "{8534B792-CFDB-4036-9C10-7C9321ADFB8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDataTemplateSample", "IDataTemplateSample\IDataTemplateSample.csproj", "{D6037933-CACC-4CF2-8FF6-EDC2A0807F46}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{8534B792-CFDB-4036-9C10-7C9321ADFB8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8534B792-CFDB-4036-9C10-7C9321ADFB8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8534B792-CFDB-4036-9C10-7C9321ADFB8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6037933-CACC-4CF2-8FF6-EDC2A0807F46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6037933-CACC-4CF2-8FF6-EDC2A0807F46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6037933-CACC-4CF2-8FF6-EDC2A0807F46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6037933-CACC-4CF2-8FF6-EDC2A0807F46}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
