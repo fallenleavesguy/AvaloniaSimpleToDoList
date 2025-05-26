@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:FuncDataTemplateSample.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:models="using:FuncDataTemplateSample.Models"
+        xmlns:dataTemplates="using:FuncDataTemplateSample.DataTemplates"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="FuncDataTemplateSample.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="FuncDataTemplateSample">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    <ListBox ItemsSource="{Binding People}">
+       <ListBox.ItemTemplate>
+           <DataTemplate DataType="models:Person">
+               <!--  We can use x:Static to reference a static property of any class.  -->
+               <Grid ColumnDefinitions="Auto, *">
+                   <ContentControl Content="{Binding}" ContentTemplate="{x:Static dataTemplates:DataTemplateProvider.GenderDataTemplate}"></ContentControl>
+                   <TextBlock Grid.Column="1" Margin="10, 0" VerticalAlignment="Center" Text="{Binding}"></TextBlock>
+               </Grid>
+           </DataTemplate>
+       </ListBox.ItemTemplate> 
+    </ListBox>
+</Window>
