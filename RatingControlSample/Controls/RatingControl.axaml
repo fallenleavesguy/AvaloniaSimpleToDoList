@@ -1,0 +1,16 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:RatingControlSample.Controls">
+    <Design.PreviewWith>
+        <controls:RatingControl />
+    </Design.PreviewWith>
+
+    <Style Selector="controls|RatingControl">
+        <!-- Set Defaults -->
+        <Setter Property="Template">
+            <ControlTemplate>
+                <TextBlock Text="Templated Control" Foreground="Aqua" />
+            </ControlTemplate>
+        </Setter>
+    </Style>
+</Styles>

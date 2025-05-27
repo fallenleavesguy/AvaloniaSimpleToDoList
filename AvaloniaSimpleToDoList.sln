@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDataTemplateSample", "IDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicViewLocatorSample", "BasicViewLocatorSample\BasicViewLocatorSample.csproj", "{82CF78DD-5E7F-4568-AEA0-EA521E734FA9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomControls", "CustomControls", "{CEDFE318-3254-4DA7-B543-AE4845E4AB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RatingControlSample", "RatingControlSample\RatingControlSample.csproj", "{0A2E816A-BCED-4374-9838-ADB7295EF49B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +64,12 @@ Global
 		{82CF78DD-5E7F-4568-AEA0-EA521E734FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82CF78DD-5E7F-4568-AEA0-EA521E734FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82CF78DD-5E7F-4568-AEA0-EA521E734FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A2E816A-BCED-4374-9838-ADB7295EF49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A2E816A-BCED-4374-9838-ADB7295EF49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A2E816A-BCED-4374-9838-ADB7295EF49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A2E816A-BCED-4374-9838-ADB7295EF49B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0A2E816A-BCED-4374-9838-ADB7295EF49B} = {CEDFE318-3254-4DA7-B543-AE4845E4AB7A}
 	EndGlobalSection
 EndGlobal
